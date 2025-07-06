@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infinity Games</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #00bcd4;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #ccc;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: #00bcd4;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 188, 212, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #00bcd4;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #1f1f1f;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .about, .contact {
+      background-color: #1a1a1a;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 188, 212, 0.05);
+      margin-top: 4rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #2b2b2b;
+      color: white;
+    }
+
+    button {
+      background-color: #00bcd4;
+      border: none;
+      color: white;
+      padding: 0.8rem;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0097a7;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Infinity Games</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#catalog">Catálogo</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container" id="home">
+    <h2 class="section-title">Destaques</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=1" alt="Game 1">
+        <div class="card-content">
+          <h2>CyberZone</h2>
+          <p>Explore uma metrópole futurista repleta de desafios e adrenalina.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=2" alt="Game 2">
+        <div class="card-content">
+          <h2>Fantasy Clash</h2>
+          <p>Uma batalha mágica entre reinos em um universo encantado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="catalog">
+    <h2 class="section-title">Catálogo de Jogos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=3" alt="Game 3">
+        <div class="card-content">
+          <h2>SpeedRush</h2>
+          <p>Corridas intensas em pistas alucinantes. Prepare-se para acelerar!</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=4" alt="Game 4">
+        <div class="card-content">
+          <h2>Dark Dungeons</h2>
+          <p>Explore masmorras sombrias e derrote criaturas lendárias.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=5" alt="Game 5">
+        <div class="card-content">
+          <h2>Alien Defense</h2>
+          <p>Proteja a Terra de invasores intergalácticos com sua estratégia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container about" id="about">
+    <h2 class="section-title">Sobre a Infinity Games</h2>
+    <p>A Infinity Games nasceu da paixão por jogos e tecnologia. Criamos experiências digitais imersivas, conectando jogadores ao redor do mundo com os melhores títulos da atualidade e clássicos inesquecíveis. Nosso compromisso é com a diversão, inovação e a comunidade gamer.</p>
+  </div>
+
+  <div class="container contact" id="contact">
+    <h2 class="section-title">Fale Conosco</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu email" required>
+      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Infinity Games. Todos os direitos reservados.
+  </footer>
+</body>
+
+</html>
