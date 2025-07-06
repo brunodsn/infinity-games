@@ -6,7 +6,7 @@ Bem-vindo ao **Infinity Games** — um site moderno, responsivo e estilizado com
 
 ## ✨ Visite o site
 
-🔗 [https://kevin-sallen.github.io/Infinity-games/](https://brunodsn.github.io/infinity-games)
+🔗 [https://kevin-sallen.github.io/Infinity-games/](https://kevin-sallen.github.io/Infinity-games/)
 
 
 ---
