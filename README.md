@@ -8,7 +8,6 @@ Bem-vindo ao **Infinity Games** — um site moderno, responsivo e estilizado com
 
 🔗 [https://kevin-sallen.github.io/Infinity-games/](https://brunodsn.github.io/infinity-games)
 
-> Substitua `SEU-USUARIO` pelo seu nome de usuário do GitHub para acessar seu site ao vivo.
 
 ---
 
@@ -35,9 +34,3 @@ Bem-vindo ao **Infinity Games** — um site moderno, responsivo e estilizado com
 
 ---
 
-## 🚀 Como rodar localmente
-
-```bash
-git clone https://github.com/brunodsn/infinity-games.git
-cd infinity-games
-# Abra o arquivo index.html com seu navegador
